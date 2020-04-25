@@ -9,7 +9,4 @@
 import Foundation
 struct Main_Constants {
     static let maxCards = 8 // only even numbers should be entered
-    static let estimateHeight = 160.0
-    static let cellMarginSize = 10
-    
 }

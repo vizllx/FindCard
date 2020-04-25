@@ -18,7 +18,18 @@
 		EDF67B8E245323B100ACEA4C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF67B8D245323B100ACEA4C /* Card.swift */; };
 		EDF67B902453256C00ACEA4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF67B8F2453256C00ACEA4C /* Constants.swift */; };
 		EDF67B922453272D00ACEA4C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF67B912453272D00ACEA4C /* Helper.swift */; };
+		EDF67B9A245355A300ACEA4C /* iOSDemoSingtelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF67B99245355A300ACEA4C /* iOSDemoSingtelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDF67B9C245355A300ACEA4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF67B5B2452A7ED00ACEA4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF67B622452A7ED00ACEA4C;
+			remoteInfo = iOSDemoSingtel;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EDF67B632452A7ED00ACEA4C /* iOSDemoSingtel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoSingtel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +45,20 @@
 		EDF67B8D245323B100ACEA4C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EDF67B8F2453256C00ACEA4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EDF67B912453272D00ACEA4C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EDF67B97245355A300ACEA4C /* iOSDemoSingtelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDemoSingtelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF67B99245355A300ACEA4C /* iOSDemoSingtelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDemoSingtelTests.swift; sourceTree = "<group>"; };
+		EDF67B9B245355A300ACEA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EDF67B602452A7ED00ACEA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF67B94245355A300ACEA4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				EDF67B652452A7ED00ACEA4C /* iOSDemoSingtel */,
+				EDF67B98245355A300ACEA4C /* iOSDemoSingtelTests */,
 				EDF67B642452A7ED00ACEA4C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				EDF67B632452A7ED00ACEA4C /* iOSDemoSingtel.app */,
+				EDF67B97245355A300ACEA4C /* iOSDemoSingtelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +185,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		EDF67B98245355A300ACEA4C /* iOSDemoSingtelTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF67B99245355A300ACEA4C /* iOSDemoSingtelTests.swift */,
+				EDF67B9B245355A300ACEA4C /* Info.plist */,
+			);
+			path = iOSDemoSingtelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +214,24 @@
 			productReference = EDF67B632452A7ED00ACEA4C /* iOSDemoSingtel.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EDF67B96245355A300ACEA4C /* iOSDemoSingtelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF67B9E245355A300ACEA4C /* Build configuration list for PBXNativeTarget "iOSDemoSingtelTests" */;
+			buildPhases = (
+				EDF67B93245355A300ACEA4C /* Sources */,
+				EDF67B94245355A300ACEA4C /* Frameworks */,
+				EDF67B95245355A300ACEA4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF67B9D245355A300ACEA4C /* PBXTargetDependency */,
+			);
+			name = iOSDemoSingtelTests;
+			productName = iOSDemoSingtelTests;
+			productReference = EDF67B97245355A300ACEA4C /* iOSDemoSingtelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +244,10 @@
 				TargetAttributes = {
 					EDF67B622452A7ED00ACEA4C = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					EDF67B96245355A300ACEA4C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = EDF67B622452A7ED00ACEA4C;
 					};
 				};
 			};
@@ -211,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				EDF67B622452A7ED00ACEA4C /* iOSDemoSingtel */,
+				EDF67B96245355A300ACEA4C /* iOSDemoSingtelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +279,13 @@
 				EDF67B732452A7EF00ACEA4C /* LaunchScreen.storyboard in Resources */,
 				EDF67B702452A7EF00ACEA4C /* Assets.xcassets in Resources */,
 				EDF67B6E2452A7ED00ACEA4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF67B95245355A300ACEA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +306,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDF67B93245355A300ACEA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF67B9A245355A300ACEA4C /* iOSDemoSingtelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF67B9D245355A300ACEA4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF67B622452A7ED00ACEA4C /* iOSDemoSingtel */;
+			targetProxy = EDF67B9C245355A300ACEA4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EDF67B6C2452A7ED00ACEA4C /* Main.storyboard */ = {
@@ -414,6 +492,44 @@
 			};
 			name = Release;
 		};
+		EDF67B9F245355A300ACEA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSDemoSingtelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sandeep.iOSDemoSingtelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSDemoSingtel.app/iOSDemoSingtel";
+			};
+			name = Debug;
+		};
+		EDF67BA0245355A300ACEA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSDemoSingtelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sandeep.iOSDemoSingtelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSDemoSingtel.app/iOSDemoSingtel";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -431,6 +547,15 @@
 			buildConfigurations = (
 				EDF67B782452A7EF00ACEA4C /* Debug */,
 				EDF67B792452A7EF00ACEA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF67B9E245355A300ACEA4C /* Build configuration list for PBXNativeTarget "iOSDemoSingtelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF67B9F245355A300ACEA4C /* Debug */,
+				EDF67BA0245355A300ACEA4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

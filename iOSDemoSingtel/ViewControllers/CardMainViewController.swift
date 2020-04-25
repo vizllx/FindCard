@@ -23,10 +23,6 @@ class CardMainViewController: UIViewController {
         // Register cells
         self.deckCollectionView.register(UINib(nibName: "ItemCell", bundle: nil), forCellWithReuseIdentifier: "ItemCell")
         viewModel?.delegate = self
-        
-        // SetupGrid view
-        self.setupGridView()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -42,17 +38,6 @@ class CardMainViewController: UIViewController {
     }
     
     // MARK: - Internal Methods
-    fileprivate func setupGridView() {
-        let itemSize = self.deckCollectionView.bounds.width/3 - CGFloat(Main_Constants.cellMarginSize)
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: itemSize, height: CGFloat(Main_Constants.estimateHeight))
-        
-        layout.minimumInteritemSpacing = CGFloat(Main_Constants.cellMarginSize)
-        layout.minimumLineSpacing = CGFloat(Main_Constants.cellMarginSize)
-        self.deckCollectionView?.collectionViewLayout = layout
-    }
-    
     @IBAction func resetAction(_ sender: Any) {
         self.viewModel?.reset()
     }
@@ -88,7 +73,18 @@ extension CardMainViewController: UICollectionViewDelegate {
             self.view.isUserInteractionEnabled = true
         }
     }
+
 }
+
+extension CardMainViewController: UICollectionViewDelegateFlowLayout
+{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+          let width = view.frame.size.width / 3
+        return CGSize(width: width - 15 , height: 160)
+        
+       }
+}
+
 // MARK: - ViewModel Delegate
 extension CardMainViewController: CardMainViewModelDelegate {
     func reloadCells() {

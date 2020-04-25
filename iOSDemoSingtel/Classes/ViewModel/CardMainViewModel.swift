@@ -27,11 +27,11 @@ protocol CardMainViewModelDelegate: class {
 
 class CardMainViewModel:CardMainViewModelProtocol {
     // MARK: - Properties
-    internal var stackedCards:[Card] = []
-    internal var matchedCards:[Card] = []
-    internal var dataArray:[Card] = []
-    internal var countCellTap = 0
-    internal weak var delegate:CardMainViewModelDelegate?
+     var stackedCards:[Card] = []
+     var matchedCards:[Card] = []
+     var dataArray:[Card] = []
+     var countCellTap = 0
+     weak var delegate:CardMainViewModelDelegate?
     
     // MARK: - Init methods
     init() {
